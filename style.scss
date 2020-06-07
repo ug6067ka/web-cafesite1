@@ -8,15 +8,111 @@ body {
 .header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 70px;
-  background: #555555;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: #fff;
+  transition: all 0.5s ease;
   z-index: 999;
 }
+
+.hidden {
+  background: none;
+  transition: all 0.5s ease;
+}
+
+/* other - nav */
+
+nav {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 20px;
+  margin: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 16px;
+}
+
+nav .here {
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* other */
+
+html,
+body,
+header,
+footer,
+section,
+h1,
+h2,
+ul,
+li,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #b5d898;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 10px;
+  padding: 0;
+}
+
+.container {
+  max-width: 590px;
+  margin: 90px auto 0;
+  padding: 0 15px 30px;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+.h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 20px;
+  color: #1d1f20;
+}
+
+// .header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 70px;
+//   background: #555555;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   z-index: 999;
+// }
+
 .header__inner {
   width: 93%;
   height: 100%;
@@ -117,7 +213,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 15px 60px;
-  border-bottom: solid 1px #dbdbdb;
 }
 .product-hot {
   color: red;
@@ -138,7 +233,6 @@ body {
 .menupage_inner {
   display: flex;
   flex-direction: row;
-  width: 50%;
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -471,7 +565,6 @@ body {
   border-bottom: solid 2px #dbdbdb;
   border-top: solid 2px #dbdbdb;
   font-size: 30px;
-  width: 50%;
   position: relative;
 }
 .menulist-img {
@@ -480,22 +573,23 @@ body {
 .menuList__txt {
   position: absolute;
   left: 35%;
+  top: 5%;
 }
 
-.accordion_icon {
-  position: absolute;
-  width: 30px;
-  height: 40px;
-  top: -15px;
-  right: 10px;
-  border-bottom: solid 2px black;
-}
+// .accordion_icon {
+//   position: absolute;
+//   width: 30px;
+//   height: 40px;
+//   top: -15px;
+//   right: 10px;
+//   border-bottom: solid 2px black;
+// }
 
-.accordion_icon span {
-  width: 100%;
-  height: 1px;
-  background-color: black;
-}
+// .accordion_icon span {
+//   width: 100%;
+//   height: 1px;
+//   background-color: black;
+// }
 
 // plus to mainasu
 
@@ -587,14 +681,15 @@ body {
   display: none;
 }
 .acd-label {
-  background: #333;
-  color: #fff;
+  width: 50%;
+  height: 66px;
+  font-size: 40px;
+  color: black;
   display: block;
   margin-bottom: 1px;
   padding: 10px;
 }
 .acd-content {
-  border: 1px solid #333;
   height: 0;
   opacity: 0;
   padding: 0 10px;
@@ -602,8 +697,119 @@ body {
   visibility: hidden;
 }
 .acd-check:checked + .acd-label + .acd-content {
-  height: 40px;
   opacity: 1;
   padding: 10px;
   visibility: visible;
+}
+
+.accordion-item {
+  width: 100%;
+  cursor: pointer;
+}
+
+.accordion-header {
+  transition: ease-in-out 100ms;
+}
+
+.accordion-text {
+  width: 100%;
+
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.fa {
+  transition: ease-in-out 300ms;
+}
+
+.rotate-fa {
+  transform: rotate(180deg);
+}
+
+.accordion-header .fa {
+  float: right;
+  line-height: 35px;
+}
+
+.accordion-gold {
+  color: #ddba4d;
+}
+
+.accordion-no-bar {
+  border-bottom: 0;
+}
+.container {
+  width: 50%;
+  text-align: center;
+}
+
+/* ここから下がボタンのCSS　*/
+.btn-border {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid black;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.btn-border:hover {
+  background-color: #9ec34b;
+  border-color: #cbe585;
+  color: #fff;
+}
+
+.accordion-wrap {
+  width: 50%;
+  padding: 0px 30px;
+}
+
+// .menulist {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+// }
+
+.accordion_icon span {
+  display: block;
+  position: relative;
+}
+
+/* 二本の横棒を作成する */
+span::before,
+span::after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 2px;
+  border-radius: 5px;
+  background: black;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 2本の横棒のうち一本は縦棒にする */
+span::after {
+  background: black;
+  /* 横棒を縦にするために90℃回転させる */
+  transform: translateY(-50%) rotate(90deg);
+  /* プラスからマイナスへの切り替えをゆっくり行いアニメーションさせる */
+  transition: 0.5s;
+}
+
+/*
+プラスがクリックされたら縦棒を横にしてマイナスにする疑似要素
+jQueryで付け外しを行う
+*/
+.active::after {
+  transform: rotate(0);
+  transition: 0.5s;
 }

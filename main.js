@@ -40,33 +40,35 @@ function slideshow_timer() {
   setTimeout("slideshow_timer()", 4000);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  var plusButton = document.querySelector(".btn-wrapper");
-  var imgInfo = document.querySelector(".img-info");
-  var closeButton = document.querySelector(".img-info__close-btn");
-  // after clicking, turn on img-info
-  plusButton.addEventListener("click", function () {
-    // add class name "img-info--active" to imgInfo
-    imgInfo.classList.add("img-info--active");
-  });
+$(".accordion-wrap").on("click", function () {
+  $(this).children().eq(1).slideToggle(300);
+  $(this).children().eq(0).toggleClass("accordion-no-bar");
+  $(this).siblings().find(".accordion-header").removeClass("accordion-gold");
+  $(this).siblings().find(".accordion-header i").removeClass("rotate-fa");
+  $(this).find(".accordion-header").toggleClass("accordion-gold");
+  $(this).find(".fa").toggleClass("rotate-fa");
 
-  // after clicking, turn off img-info
-  closeButton.addEventListener("click", function () {
-    // remove class name "img-info--active" to imgInfo
-    imgInfo.classList.remove("img-info--active");
-  });
+  $(".accordion-wrap .accordion-text")
+    .not($(this).children().eq(1))
+    .slideUp(300);
 });
 
 $(function () {
-  $(".accordion li a").on("click", function () {
-    $(this).next().slideToggle();
-    // activeが存在する場合
-    if ($(this).children(".accordion_icon").hasClass("active")) {
-      // activeを削除
-      $(this).children(".accordion_icon").removeClass("active");
-    } else {
-      // activeを追加
-      $(this).children(".accordion_icon").addClass("active");
-    }
+  $("div").click(function () {
+    $("span").toggleClass("active");
   });
+});
+
+//header
+// スクロールイベント
+window.addEventListener("scroll", function () {
+  var headerElement = document.getElementById("header"); // `#header`セレクタを取得
+  var rect = headerElement.getBoundingClientRect(); //
+  var y = rect.top + window.pageYOffset; // Y方向 (縦)にスクロール量を取得（pageYOffset：windowオブジェクト。現在表示位置のY座標を取得）
+  if (y > 0) {
+    // 変数yの値が0よりも
+    headerElement.classList.remove("hidden"); // 大きければhiddensセレクタを削除する
+  } else {
+    headerElement.classList.add("hidden"); // そうでなければhiddensセレクタを追加する
+  }
 });
