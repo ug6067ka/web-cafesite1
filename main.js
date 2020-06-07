@@ -45,14 +45,28 @@ document.addEventListener("DOMContentLoaded", () => {
   var imgInfo = document.querySelector(".img-info");
   var closeButton = document.querySelector(".img-info__close-btn");
   // after clicking, turn on img-info
-  plusButton.addEventListener("click", function() {
+  plusButton.addEventListener("click", function () {
     // add class name "img-info--active" to imgInfo
     imgInfo.classList.add("img-info--active");
   });
 
   // after clicking, turn off img-info
-  closeButton.addEventListener("click", function() {
+  closeButton.addEventListener("click", function () {
     // remove class name "img-info--active" to imgInfo
     imgInfo.classList.remove("img-info--active");
+  });
+});
+
+$(function () {
+  $(".accordion li a").on("click", function () {
+    $(this).next().slideToggle();
+    // activeが存在する場合
+    if ($(this).children(".accordion_icon").hasClass("active")) {
+      // activeを削除
+      $(this).children(".accordion_icon").removeClass("active");
+    } else {
+      // activeを追加
+      $(this).children(".accordion_icon").addClass("active");
+    }
   });
 });
