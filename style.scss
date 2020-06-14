@@ -4,7 +4,7 @@ $cblack: #3c3b3b;
 body {
   font-family: serif;
 }
-
+//header
 .header {
   position: fixed;
   top: 0;
@@ -22,6 +22,8 @@ body {
 
 .hidden a {
   color: black;
+  border-left: solid 2px black;
+  padding-left: 30px;
   &:hover {
     color: #a5a5a5;
     text-decoration: inherit;
@@ -29,15 +31,27 @@ body {
   }
 }
 
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  list-style: none;
+}
+
 /* other - nav */
 
 nav {
+  height: 20px;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
   padding: 50px;
   margin: -20px;
   background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
 }
 
 nav a {
@@ -47,7 +61,7 @@ nav a {
 
 nav li {
   display: inline;
-  margin-right: 44px;
+  margin-right: 30px;
 }
 
 nav .here {
@@ -58,16 +72,11 @@ nav .here {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 
 /* other */
-
-a {
-  text-decoration: none;
-  margin: 0 5px;
-}
 
 // .header {
 //   position: fixed;
@@ -168,13 +177,13 @@ h2:before {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -10px; /*下線の上下位置調整*/
+  bottom: -20px;
   display: inline-block;
   width: 80px;
   height: 4px;
   border-radius: 5px;
-  transform: translate(-50%); /*位置調整*/
-  background-color: black; /*下線の色*/
+  transform: translate(-50%);
+  background-color: #3c3b3b;
 }
 
 .menupage_contents {
@@ -244,7 +253,7 @@ h2:before {
   padding: 47px 0px;
   z-index: 30;
   position: absolute;
-  right: 160px;
+  right: 180px;
   img {
     width: 415px;
   }
@@ -754,12 +763,14 @@ h2:before {
 }
 
 .menulist_inner {
-  padding: 0px 30px;
+  padding: 0px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .accordion-wrap {
-  width: 50%;
-  padding: 0px 30px;
+  width: 48%;
 }
 
 // .menulist {
@@ -841,13 +852,15 @@ jQueryで付け外しを行う
   margin-bottom: 28px;
 }
 
-.footer-inner ul {
-  display: flex;
-  flex-direction: row;
-}
-.footer-inner li {
-  width: 35px;
-  height: 35px;
-  margin-right: 25px;
-  list-style: none;
-}
+// .footer-inner ul {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
+//   margin-top: 100px;
+// }
+// .footer-inner li {
+//   width: 35px;
+//   height: 35px;
+//   margin-right: 25px;
+//   list-style: none;
+// }
