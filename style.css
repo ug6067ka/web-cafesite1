@@ -292,7 +292,7 @@ h2:before {
 .menupage_left {
   color: #212121;
   background-color: transparent;
-  width: 50%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +319,7 @@ h2:before {
   padding: 47px 0px;
   z-index: 30;
   position: absolute;
-  right: 180px;
+  right: 270px;
 }
 
 .menupage_right_img img {
@@ -335,14 +335,15 @@ h2:before {
 .menupage_left-text {
   font-size: 20px;
   line-height: 1.8;
+  margin-top: -20px;
 }
 
 .gray {
-  width: 75%;
-  height: 425px;
+  width: 32%;
+  height: 510px;
   background-color: #abaaa8;
   margin-left: auto;
-  margin-right: 105px;
+  margin-right: 155px;
   position: relative;
 }
 
@@ -1010,5 +1011,24 @@ li {
 
 .menulist {
   padding: 0px 60px;
+}
+
+a.cp_btn {
+  display: block;
+  width: 160px;
+  padding: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+
+a.cp_btn:hover {
+  background: #ec407a;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
