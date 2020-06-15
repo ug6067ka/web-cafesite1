@@ -32,6 +32,11 @@ body {
   cursor: pointer;
 }
 
+.Cafeppa_logo {
+  width: 40px;
+  height: 40px;
+}
+
 .icon {
   width: 25px;
   height: 25px;
@@ -55,12 +60,25 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
+}
+
+.first {
+  position: absolute;
+  left: 10px;
+  top: 27px;
+}
+
+.secound {
+  position: absolute;
+  left: 85px;
+  top: 35px;
+}
+
+.third {
+  position: absolute;
+  top: 35px;
+  right: 20px;
 }
 
 nav a {
@@ -89,6 +107,10 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav ul:last-child {
+  padding-left: 200px;
 }
 
 /* other */
@@ -231,7 +253,7 @@ h2:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 60px;
+  padding: 15px 5px;
 }
 
 .product-hot {
@@ -462,13 +484,13 @@ h2:before {
   background-position: center;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  height: 280px;
+  height: 300px;
   display: block;
   margin: 0 5px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 280px;
-  min-width: 280px;
+  width: 300px;
+  min-width: 300px;
 }
 
 .controls_inner-link img {
@@ -503,6 +525,7 @@ h2:before {
   overflow: hidden;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  z-index: 100;
 }
 
 .btn-next:hover {
@@ -539,21 +562,24 @@ h2:before {
 }
 
 .img1 .caption {
-  font-size: 130%;
-  text-align: center;
+  font-size: 15px;
+  text-align: inherit;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 20px;
 }
 
-.caption h1 {
-  font-size: 27px;
-}
-
-.caption p {
-  font-size: 15px;
-}
-
-.caption a {
-  font-size: 15px;
+.caption p:last-child {
+  margin-top: 90px;
 }
 
 .img1 .mask {
@@ -565,8 +591,7 @@ h2:before {
   left: 0;
   opacity: 0;
   /* マスクを表示しない */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* マスクは半透明 */
+  background: #454545;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -574,7 +599,6 @@ h2:before {
 .img1:hover .mask {
   opacity: 1;
   /* マスクを表示する */
-  padding-top: 64px;
 }
 
 .top_foodmenu_inner {
@@ -653,6 +677,7 @@ h2:before {
   position: absolute;
   left: 35%;
   top: 5%;
+  margin-left: 15px;
 }
 
 .accordion ul {
@@ -860,44 +885,6 @@ h2:before {
   position: relative;
 }
 
-/* 二本の横棒を作成する */
-span::before,
-span::after {
-  content: "";
-  display: block;
-  width: 17px;
-  height: 2px;
-  border-radius: 5px;
-  background: black;
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-/* 2本の横棒のうち一本は縦棒にする */
-span::after {
-  background: black;
-  /* 横棒を縦にするために90℃回転させる */
-  -webkit-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
-  /* プラスからマイナスへの切り替えをゆっくり行いアニメーションさせる */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/*
-プラスがクリックされたら縦棒を横にしてマイナスにする疑似要素
-jQueryで付け外しを行う
-*/
-.active::after {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 .about_us {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -945,5 +932,83 @@ jQueryで付け外しを行う
   border-bottom: 1px solid #000;
   margin-top: 24px;
   margin-bottom: 28px;
+}
+
+li {
+  list-style: none;
+}
+
+#wrap {
+  width: 900px;
+  padding: 40px 40px;
+  margin: auto;
+}
+
+.p-accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.p-accordion__item {
+  width: 48%;
+}
+
+.p-accordion__head {
+  margin: auto;
+}
+
+.p-accordion__head a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.p-accordion__head a::before,
+.p-accordion__head a::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 12px;
+  margin: auto 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.p-accordion__head a::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.p-accordion__item[data-active] .p-accordion__head a::before {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  opacity: 0;
+}
+
+.p-accordion__item[data-active] .p-accordion__head a::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.p-accordion__content {
+  margin-top: 8px;
+}
+
+.menulist {
+  padding: 0px 60px;
 }
 /*# sourceMappingURL=style.css.map */
