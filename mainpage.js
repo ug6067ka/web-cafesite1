@@ -63,7 +63,7 @@ function slideshow_timer() {
 // });
 
 //header
-// スクロールイベント
+// scroll event
 window.addEventListener("scroll", function () {
   var headerElement = document.getElementById("header"); // `#header`セレクタを取得
   var rect = headerElement.getBoundingClientRect(); //
@@ -76,7 +76,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//
+// acordion menu
 function Accordion(obj) {
   // `wrap_id`で指定した要素が無かったら、以降は実行しない
   if (!document.querySelector(`#${obj.wrap_id}`)) {
@@ -155,4 +155,17 @@ Accordion({
   accordion_transition: ".4s",
   toggle_attr: "data-active",
   default_is_open: false,
+});
+
+//
+var swiper = new Swiper(".swiper-container", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 4,
+  spaceBetween: 10,
+  initialSlide: 0,
+  speed: 300,
+  loop: true,
 });
