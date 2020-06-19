@@ -163,9 +163,10 @@ var swiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: 4,
+  centeredSlides: true,
+  slidesPerView: 4.5,
   spaceBetween: 10,
   initialSlide: 0,
-  speed: 300,
+  speed: 500,
   loop: true,
 });
