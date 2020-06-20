@@ -22,7 +22,7 @@
 // });
 //
 
-//main image
+// main image
 var pics_src = new Array(
   "brooke-cagle-8jp-6SjVibM-unsplash.jpg",
   "armin-lotfi-gURxlcD9I0U-unsplash.jpg",
@@ -165,7 +165,7 @@ var swiper = new Swiper(".swiper-container", {
   },
   centeredSlides: true,
   slidesPerView: 4.5,
-  spaceBetween: 10,
+  spaceBetween: 0,
   initialSlide: 0,
   speed: 500,
   loop: true,
