@@ -78,21 +78,11 @@ nav {
 
 .secound {
   position: absolute;
-  left: 245px;
+  right: 40px;
   top: 35px;
 }
 
 .secound:hover {
-  cursor: pointer;
-}
-
-.third {
-  position: absolute;
-  top: 35px;
-  right: 40px;
-}
-
-.third:hover {
   cursor: pointer;
 }
 
