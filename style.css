@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
-  font-family: serif;
+  font-family: Georgia;
+  width: 100%;
 }
 
 /* header*/
@@ -8,22 +9,22 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 120px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   z-index: 999;
   background: white;
 }
 
-.hidden {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  padding-top: 30px;
+@media (max-width: 1024px) {
+  .header {
+    height: 85px;
+  }
 }
 
 .hidden a {
-  color: black;
-  border-left: solid 2px black;
+  color: #3c3b3b;
+  border-left: solid 2px #3c3b3b;
   padding-left: 30px;
 }
 
@@ -31,10 +32,6 @@ body {
   color: #a5a5a5;
   text-decoration: inherit;
   cursor: pointer;
-}
-
-.Cafeppa_logo {
-  width: 15%;
 }
 
 .icon {
@@ -58,7 +55,6 @@ nav {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 50px;
-  margin: -20px;
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +69,7 @@ nav {
 .first {
   position: absolute;
   left: 10px;
-  top: 11px;
+  top: 10px;
 }
 
 .secound {
@@ -84,6 +80,12 @@ nav {
 
 .secound:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .secound {
+    display: none;
+  }
 }
 
 nav a {
@@ -243,7 +245,7 @@ h2:before {
   width: 415px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .menupage_right_img {
     padding: 32px 0px;
     right: 139px;
@@ -471,8 +473,8 @@ a.cp_btn_right:before {
 
 @media (max-width: 1024px) {
   .foodmenu_background {
-    width: 380px;
-    height: 380px;
+    width: 360px;
+    height: 350px;
   }
 }
 
@@ -485,10 +487,10 @@ a.cp_btn_right:before {
 @media (max-width: 1024px) {
   .foodmenu_img {
     top: 55px;
-    left: 90px;
+    left: 118px;
   }
   .foodmenu_img img {
-    width: 95%;
+    height: 350px;
   }
 }
 
@@ -508,6 +510,7 @@ a.cp_btn_right:before {
 
 @media (max-width: 1024px) {
   .top_foodmenu_right {
+    margin-left: 40px;
     height: 455px;
   }
 }
@@ -528,6 +531,14 @@ a.cp_btn_right:before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
+}
+
+@media (max-width: 1024px) {
+  .p-accordion {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .p-accordion__item {
@@ -640,12 +651,6 @@ a.cp_btn_right:before {
 }
 
 @media (max-width: 1024px) {
-  .imfo-text {
-    margin: 20px 110px;
-  }
-}
-
-@media (max-width: 1024px) {
   .map-pc {
     display: none;
   }
@@ -693,10 +698,29 @@ a.cp_btn_right:before {
 
 /* main */
 /* swiper-container */
+@media screen and (min-width: 1024px) {
+  .controls {
+    display: none;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .controls_inner {
+    display: none;
+  }
+}
+
 .swiper-container {
   width: 100%;
   height: 300px;
   margin: 20px auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-container {
+    display: none;
+  }
 }
 
 .swiper-slide {
@@ -800,6 +824,10 @@ a.cp_btn_right:before {
 .insta-id p {
   margin: 0px;
   font-size: 25px;
+}
+
+.info-map {
+  width: 100%;
 }
 
 /* footer */

@@ -2,7 +2,8 @@ $cwhite: white;
 $cblack: #3c3b3b;
 
 body {
-  font-family: serif;
+  font-family: Georgia;
+  width: 100%;
 }
 
 /* header*/
@@ -10,20 +11,23 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 120px;
   transition: all 0.5s ease;
   z-index: 999;
   background: white;
+  @media (max-width: 1024px) {
+    height: 85px;
+  }
 }
 
-.hidden {
-  transition: all 0.5s ease;
-  padding-top: 30px;
-}
+// .hidden {
+//   transition: all 0.5s ease;
+//   padding-top: 30px;
+// }
 
 .hidden a {
-  color: black;
-  border-left: solid 2px black;
+  color: $cblack;
+  border-left: solid 2px $cblack;
   padding-left: 30px;
   &:hover {
     color: #a5a5a5;
@@ -32,9 +36,9 @@ body {
   }
 }
 
-.Cafeppa_logo {
-  width: 15%;
-}
+// .Cafeppa_logo {
+//   width: 20%;
+// }
 
 .icon {
   width: 25px;
@@ -55,7 +59,6 @@ nav {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 50px;
-  margin: -20px;
   background-color: transparent;
   display: flex;
   flex-direction: row;
@@ -67,7 +70,7 @@ nav {
 .first {
   position: absolute;
   left: 10px;
-  top: 11px;
+  top: 10px;
 }
 
 .secound {
@@ -76,6 +79,9 @@ nav {
   top: 35px;
   &:hover {
     cursor: pointer;
+  }
+  @media (max-width: 1024px) {
+    display: none;
   }
 }
 
@@ -200,7 +206,7 @@ h2:before {
   img {
     width: 415px;
   }
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     padding: 32px 0px;
     right: 139px;
     img {
@@ -221,6 +227,12 @@ h2:before {
   margin-top: -20px;
   @media (max-width: 1024px) {
     line-height: normal;
+  }
+}
+
+.menupage_left-title-second {
+  @media (max-width: 1024px) {
+    // margin-right: 85px;
   }
 }
 
@@ -384,8 +396,8 @@ a.cp_btn_right:before {
   height: 470px;
   background-color: #799c94;
   @media (max-width: 1024px) {
-    width: 380px;
-    height: 380px;
+    width: 360px;
+    height: 350px;
   }
 }
 
@@ -395,9 +407,9 @@ a.cp_btn_right:before {
   left: 200px;
   @media (max-width: 1024px) {
     top: 55px;
-    left: 90px;
+    left: 118px;
     img {
-      width: 95%;
+      height: 350px;
     }
   }
 }
@@ -409,6 +421,7 @@ a.cp_btn_right:before {
   width: 50%;
   height: 500px;
   @media (max-width: 1024px) {
+    margin-left: 40px;
     height: 455px;
   }
 }
@@ -425,6 +438,9 @@ a.cp_btn_right:before {
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
+  @media (max-width: 1024px) {
+    justify-content: flex-start;
+  }
 }
 
 .p-accordion__item {
@@ -510,7 +526,6 @@ a.cp_btn_right:before {
   margin: 20px 50px;
 
   @media (max-width: 1024px) {
-    margin: 20px 110px;
   }
 }
 
@@ -564,10 +579,25 @@ a.cp_btn_right:before {
 
 /* main */
 /* swiper-container */
+.controls {
+  @media screen and (min-width: 1024px) {
+    display: none;
+    overflow-x: scroll;
+  }
+}
+
+.controls_inner {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
 .swiper-container {
   width: 100%;
   height: 300px;
   margin: 20px auto;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 .swiper-slide {
   text-align: center;
@@ -656,6 +686,10 @@ a.cp_btn_right:before {
   }
 }
 
+.info-map {
+  width: 100%;
+}
+
 /* footer */
 .footer-inner {
   margin: auto;
@@ -666,3 +700,5 @@ a.cp_btn_right:before {
   margin-top: 24px;
   margin-bottom: 28px;
 }
+
+//
