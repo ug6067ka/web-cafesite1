@@ -3,538 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
-    
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Cardo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.9.1.js"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
    
     
 
-    <title>Cafe website</title>
   </head>
+
   <body>
-    <!-- header -->
-    <!-- <header>
-      <div class="header hidden" id="header">
-        <nav class="hidden">
-          <ul class="first">
-            <li><img src="./images/logo35.png" width="100%" height="100%"alt=""class="Cafeppa_logo"></li>
+    <header class="main_h">
+      <div class="row">
+        <a class="logo" href="#">Caffepa/</a>
+
+        <div class="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href=".sec01">MESSAGE</a></li>
+            <li><a href=".sec02">MENU</a></li>
+            <li><a href=".sec03">PHOTO</a></li>
+            <li><a href=".sec04">ROCATION</a></li>
+            <li><a href=".sec04">CONTACT</a></li>
           </ul>
-          <ul class="secound">
-            <li><a href="#">Top</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Follow us</a></li>
-            <li><a href="#">Information</a></li>
-          </ul>
-          <ul class="third">
-            <li><img src="facebook.svg" width="100%" height="100%" alt=""class="icon"></li> 
-            <li><img src="instagram-sketched.svg" width="100%" height="100%"alt=""class="icon"></li>
-            <li><img src="twitter.svg" width="100%" height="100%"alt=""class="icon"></li>
-            <li><img src="mail.svg" width="100%" height="100%"alt=""class="icon"></li>
-          </ul>
-          
-          
         </nav>
       </div>
-    </header> -->
-    <!-- main -->
-    <main> 
-      <div class="maiapage">
-        <div class="logo"><img src="cafeppa_logo.jpg" alt=""></div>
-        <div class="mainpage-img">
-         <img
+      <!-- / row -->
+    </header>
+
+    <main>
+      <div class="hero">
+        <!-- <h1><span>I'm a cool</span><br />Navigation</h1> -->
+        <img
           id="mypic"
           onclick="slideshow()"
-          src="brooke-cagle-8jp-6SjVibM-unsplash.jpg
-         "
-         width="100%"
-         height="0%"
-         />
-      </div>
-      </div> 
-      <header>
-      
-        <ul class="heaader-menu">
-          <li><a href="#">Top</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Follow us</a></li>
-          <li><a href="#">Information</a></li>
-        </ul>
-
-      
-      </header>
-      
-
-
-      <div class="menupage_bar">
-        <h2>COFFEE</h2>
-      </div>
-
-      <div class="menupage_contents"> 
-        <div class="menupage_inner">
-          <div class="menupage_left">
-            <div class="left-blank">
-            </div>
-            <div class="left-inner">
-              <div class="menupage_left-title menupage_left-title-second">
-                    優しく、美味しい、</br>
-                    自慢の一杯
-              </div>
-          
-              <div class="menupage_left-text menupage_left-title-second">
-                    美味しいコーヒーで一息つきませんか。</br>
-                    豆と焙煎技術にこだわり抜いた、</br>
-                    当店自慢の珈琲をお楽しみ下さい。</br>
-                    ６種のミルクから選び</br>
-                    あなただけのオリジナル珈琲を提供します。</br>
-              </div>
-              <div class="menupage_left-seemore">
-                <a href="#" class="cp_btn cp_btn_right">もっと見る</a>
-              </div>
-              
-            </div>
-          </div>
-          <div class="menupage_right">
-            <div class="menupage_right_img">
-                    <img src="./images/img_menupage.png" alt="">
-            </div>
-          </div>
-          <div class="gray"></div>
-          <!-- <div class="see_more">
-             
-             <p>→</p>
-          </div> -->
+          src="./imagesbrooke-cagle-8jp-6SjVibM-unsplash.jpg
+           "
+          width="100%"
+          height="0%"
+        />
+  
+        <div class="mouse">
+          <span></span>
         </div>
-      </div> 
-      
-      <div class="menupage_bar">
-        <h2>FOOD</h2>
       </div>
-　　　　　
-      <div class="top_foodmenu">
-        <div class="top_foodmenu_inner">
-          <div class="top_foodmenu_left">
-            <div class="foodmenu_background"></div>
-            <div class="foodmenu_img">
-              <img src="./images/menupage_cake.png" alt="" />
+      <div class="first_section">
+        <div class="first_section_left">
+          <div class="first_section_img">
+           <img src="../images/img_menupage.png" alt="" />
+         </div>
+        </div>
+        <div class="first_section_right">
+            <div class="first_left-inner">
+                <div class="sction-title">
+                    MESSAGE</br>
+                 </div>
+                 <div class="sction-text">
+                    健康と環境に優しい食材を集めました。一緒に飲みませんか好きなミルクを選んで飲もう。好きなミルクを選んで飲もう。めっちゃおい美味しいコーヒをめっちゃおい美味しいコーヒを一緒に飲みませんか。好きなミルクを選んで飲もう。
+                 </div>
+                 <div class="seemore">
+                   <a href="#" class="cp_btn">もっと見る</a>
+                 </div>
             </div>
+        </div>
+      </div>
+      <div class="second_section">
+        <div class="second_section_left">
+          <div class="left-inner">
+            <div class="sction-title menupage_left-title-second">
+                MENU
+                  
+            </div>
+        
+            <div class="sction-text menupage_left-title-second">
+                  美味しいコーヒーで一息つきませんか。豆と焙煎技術にこだわり抜いた、</br>
+                  当店自慢の珈琲をお楽しみ下さい。</br>
+                  ６種のミルクから選び,あなただけのオリジナル珈琲を提供します。</br>
+            </div>
+            <div class="seemore">
+              <a href="#" class="cp_btn cp_btn_right">もっと見る</a>
+            </div>
+            
           </div>
-
-          <div class="top_foodmenu_right">
-              <div class="left-inner">
-                  <div class="menupage_left-title">
-                        優しく、美味しい、</br>
-                  </div>
-                  <div class="menupage_left-text">
-                        健康と環境に優しい食材を集めました。</br>
-                        一緒に飲みませんか好きなミルクを選んで飲もう。。</br>
-                        好きなミルクを選んで飲もう。めっちゃおい美味しいコーヒを</br>
-                        めっちゃおい美味しいコーヒを</br>
-                        一緒に飲みませんか。好きなミルクを選んで飲もう。</br>
-                  </div>
-                  <div class="menupage_left-seemore">
-                    <a href="#" class="cp_btn">もっと見る</a>
-                  </div>
-                 
-              </div>
+        </div>
+        <div class="second_section_right">
+          <div class="second_section_img">
+                  <img src="https://images.unsplash.com/photo-1507915135761-41a0a222c709?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="">
           </div>
         </div>
       </div>
-
-      <div class="menupage_bar">
-        <h2>MENU</h2>
-      </div>
-      
-      <div class="menulist">
-        <ul class="p-accordion" id="first-accordion">
-          <li class="p-accordion__item">
-            <p class="p-accordion__head">
-              
-              <a href="javascript:void(0);">
-                <img class="menulist-img"src="./images/menulist_coffee.jpg" alt="">
-                <span style="vertical-align:100%; font-size: 26px;" >Coffee &Espresso</span>
-              </a>
-              
-            </p>
-            <div class="p-accordion__content">
-              <div class="menupage_inner">
-                <div class="menu_container">
-                  <div class="menu-list">
-                    ブレンドコーヒー
-                    <br />
-                    Brend coffee
-                  </div>
-                  <div class="product-hot">
-                    HOT
-                  </div>
-                  <div class="product-price">
-                    ￥４８０
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    ブレンドコーヒー
-                    <br />
-                    Brend coffee
-                  </div>
-                  <div class="product-hot">
-                    HOT
-                  </div>
-                  <div class="product-price">
-                    ￥４８０
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    ブレンドコーヒー
-                    <br />
-                    Brend coffee
-                  </div>
-                  <div class="product-hot">
-                    HOT
-                  </div>
-                  <div class="product-price">
-                    ￥４８０
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    ブレンドコーヒー
-                    <br />
-                    Brend coffee
-                  </div>
-                  <div class="product-hot">
-                    HOT
-                  </div>
-                  <div class="product-price">
-                    ￥４８０
-                  </div>
-                </div>
-            　</div>
-              
-            </div>
-          </li>
-          <li class="p-accordion__item">
-            <p class="p-accordion__head">
-              
-              <a href="javascript:void(0);">
-                <img class="menulist-img"src="https://images.unsplash.com/photo-1469533778471-92a68acc3633?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80" alt="">
-                <span style="vertical-align:100%; font-size: 26px;" >Sweets</span>
-              </a>
-              
-            </p>
-            <div class="p-accordion__content">
-              <div class="menupage_inner">
-                <div class="menu_container">
-                  <div class="menu-list">
-                    焼き卵、チーズ（）、<br>
-                    アボカド、トマト、<br>
-                    ハラペーニョ、ミックスソース
-                  </div>
-                  <div class="product-hot">
-                   
-                  </div>
-                  <div class="product-price">
-                    ￥４８０
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    サイド<br>
-                    SIDES 
-                  </div>
-                  <div class="product-hot">
-                    
-                  </div>
-                  <div class="product-price">
-                    
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    卵
-                    <br />
-                    extra egg 
-                  </div>
-                  <div class="product-hot">
-                    
-                  </div>
-                  <div class="product-price">
-                    +￥100
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    トマト
-                    <br />
-                    tomato relish 
-                  </div>
-                  <div class="product-hot">
-                    
-                  </div>
-                  <div class="product-price">
-                    +￥100
-                  </div>
-                </div>
-            　</div>
-              
-            </div>
-          </li>
-          <li class="p-accordion__item">
-            <p class="p-accordion__head">
-              
-              <a href="javascript:void(0);">
-                <img class="menulist-img"src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
-                <span style="vertical-align:100%; font-size: 26px;" >Tea & Juice</span>
-                
-              </a>
-              
-            </p>
-            <div class="p-accordion__content">
-              <div class="menupage_inner">
-                <div class="menu_container">
-                  <div class="menu-list">
-                    緑茶 / ほうじ茶
-                    <br />
-                    Green tea / Houji cha
-                  </div>
-                  <div class="product-hot">
-                    HOT
-                  </div>
-                  <div class="product-price">
-                    ￥380
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    アイスティー
-                    <br />
-                    Iced tea
-                  </div>
-                  <div class="product-hot">
-                    HOT
-                  </div>
-                  <div class="product-price">
-                    ￥380
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    レモングラス ＆ ジンジャー
-                    <br />
-                    Lemongrass & Ginger
-                  </div>
-                  <div class="product-hot">
-                    COLD
-                  </div>
-                  <div class="product-price">
-                    ￥580
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    アップルジュース　/ オレンジジュース
-                    <br />
-                    Organic Apple or Orange Juice
-                  </div>
-                  <div class="product-hot">
-                    COLD
-                  </div>
-                  <div class="product-price">
-                    ￥480
-                  </div>
-                </div>
-            　</div>
-              
-            </div>
-          </li>
-          <li class="p-accordion__item">
-            <p class="p-accordion__head">
-              
-              <a href="javascript:void(0);">
-                <img class="menulist-img"src="https://images.unsplash.com/photo-1457785097656-8ac31dcf679f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
-                <span style="vertical-align:100%; font-size: 26px;" >Croissants</span>
-              </a>
-              
-            </p>
-            <div class="p-accordion__content">
-              <div class="menupage_inner">
-                <div class="menu_container">
-                  <div class="menu-list">
-                    プレーン
-                    <br />
-                    plain 
-                  </div>
-                  <div class="product-hot">
-                    
-                  </div>
-                  <div class="product-price">
-                    ￥450
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    アボカド+チーズ
-                    <br />
-                    Acocado + Chease
-                  </div>
-                  <div class="product-hot">
-                    
-                  </div>
-                  <div class="product-price">
-                    ￥650
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    ブレンドコーヒー
-                    <br />
-                    Brend coffee
-                  </div>
-                  <div class="product-hot">
-                    HOT
-                  </div>
-                  <div class="product-price">
-                    ￥４８０
-                  </div>
-                </div>
-                <div class="menu_container">
-                  <div class="menu-list">
-                    ブレンドコーヒー
-                    <br />
-                    Brend coffee
-                  </div>
-                  <div class="product-hot">
-                    HOT
-                  </div>
-                  <div class="product-price">
-                    ￥４８０
-                  </div>
-                </div>
-            　</div>
-              
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-      <div class="insta-id menupage_bar">
-        <p>＠caffepa</p>
-        <h2>FOLLOW US</h2>
-      </div>
-      <!-- <div class="controls">
-          <div class="controls-img">
-              <div class="controls_inner">
-                <div
-                      class="controls_inner-link img1"
-                  >
-                  <img src="./images/controls_img1.png" alt="">
-                  <div class="mask">
-                    <div class="caption">
-                      <p>♡231 likes</p>
-                      <p>
-                        こだわりのエチオピア産コーヒー豆、<br>
-                        フェアトレードでとても美味しい<br>
-                        是非お試しあれ
-                      </p>
-                      <p>2020年5月14日</p>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div
-                      class="controls_inner-link img1"
-                  >
-                  <img src="./images/controls_img2.png" alt="">
-                  <div class="mask">
-                    <div class="caption">
-                      <p>♡231 likes</p>
-                      <p>
-                        こだわりのエチオピア産コーヒー豆、<br>
-                        フェアトレードでとても美味しい<br>
-                        是非お試しあれ
-                      </p>
-                      <p>2020年5月14日</p>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div
-                      class="controls_inner-link img1"
-                  >
-                  <img src="./images/controls_img3.png" alt="">
-                  <div class="mask">
-                    <div class="caption">
-                      <p>♡231 likes</p>
-                      <p>
-                        こだわりのエチオピア産コーヒー豆、<br>
-                        フェアトレードでとても美味しい<br>
-                        是非お試しあれ
-                      </p>
-                      <p>2020年5月14日</p>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div
-                      class="controls_inner-link img1"
-                  >
-                  <img src="./images/controls_img4.png" alt="">
-                  <div class="mask">
-                    <div class="caption">
-                      <p>♡231 likes</p>
-                      <p>
-                        こだわりのエチオピア産コーヒー豆、<br>
-                        フェアトレードでとても美味しい<br>
-                        是非お試しあれ
-                      </p>
-                      <p>2020年5月14日</p>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div
-                      class="controls_inner-link img1"
-                  >
-                  <img src="./images/controls_img5.png" alt="">
-                  <div class="mask">
-                    <div class="caption">
-                      <p>♡231 likes</p>
-                      <p>
-                        こだわりのエチオピア産コーヒー豆、<br>
-                        フェアトレードでとても美味しい<br>
-                        是非お試しあれ
-                      </p>
-                      <p>2020年5月14日</p>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div
-                      class="controls_inner-link img1"
-                  >
-                  <img src="./images/controls_img5.png" alt="">
-                  <div class="mask">
-                    <div class="caption">
-                      <p>♡231 likes</p>
-                      <p>
-                        こだわりのエチオピア産コーヒー豆、<br>
-                        フェアトレードでとても美味しい<br>
-                        是非お試しあれ
-                      </p>
-                      <p>2020年5月14日</p>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-      
-          
-      </div>   -->
-      
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide img1">
@@ -551,7 +122,7 @@
                 
               </div>
             </div>
-          </div> -->
+          </div> 
           <div class="swiper-slide img1">
             <img src="./images/controls_img2.png" alt="Swiper02">
             <div class="mask">
@@ -616,80 +187,53 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div> 
-     
       
-      <!-- <div class="about_us">
-        <div class="about_us_inner">
-          <div class="about_us_title">
-            About As
-         </div>
-          <div class="about_us_text">
-            Prana Cafe offers customers an exceptional and exquisite service within <br>
-            a fashionable setting.The inviting and stylish interior is complimented by <br>
-            a second to none service and true commitment to the craft of coffee making. <br>
-                                                                                         <br>
-            Our Vegan menu uses the finest Wholefood and Organic ingredients <br>
-            to provide food that is healthy and super nutritious. <br>
-          </div>
-        </div>
-      </div>  -->
-      <div class="menupage_bar">
-        <h2>ACCESS</h2>
-      </div>
-      <div class="Information">
-        <div class="imfo-text">
-          〒123-4567 <br>
-          東京都目黒区下目黒12-3<br>
-          目黒駅東口より徒歩15分<br>
-                            <br>
-          11:00~23:00<br>
-          火曜・祝日定休日<br>       
-        </div>
+      <div class="information">
         <div class="info-map">
           <h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853398517!2d139.76493611500217!3d35.6812405375794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1592020337648!5m2!1sja!2sjp" width="900" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map-pc"></iframe>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808788!2d139.76493611509073!3d35.68123618019432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1593107345160!5m2!1sja!2sjp" width="650" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"class="map-phone"></iframe>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808788!2d139.76493611509073!3d35.68123618019432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1593107345160!5m2!1sja!2sjp" width="650" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"class="map-pc"></iframe>
           </h3>
           
-        </div> -->
-      </div>
-    </main>
-
-    <!-- main -->
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-inner">
-          <div class="footer-contents"></div>
-          <h3></h3>
-          <!-- <ul>
-            <li><img src="facebook.svg" width="100%" height="100%" alt=""></li>
-            <li><img src="instagram-sketched.svg" width="100%" height="100%"alt=""></li>
-            <li><img src="twitter.svg" width="100%" height="100%"alt=""></li>
-            <li><img src="mail.svg" width="100%" height="100%"alt=""></li>
-          </ul>
-         -->
+        </div> 
+        <div class="info-detail">
+          <div class="info-title">Location</div>
+          <div class="info-text">
+            〒123-4567 <br>
+            東京都目黒区下目黒12-3<br>
+            目黒駅東口より徒歩15分<br>
+                              <br>
+            11:00~23:00<br>
+            火曜・祝日定休日<br> 
+          </div>      
         </div>
-
       </div>
-      
- 
-
-      
-
-
-    </footer>
+      <div class="contact">
+        <div class="contact-title">
+          CONTACT
+        </div>
+        <div class="contact_text">
+          ちょこっと気になったら。
+        </div>
+        <div class="contact_btn">
+          <a href="#" class="cp_btn">080-1234-5678</a>
+        </div>
+      </div>
     
-
-
-    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
-    <script src="mainpage.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
-
-    
+    </main>
    
-   
-    
-    
+                   
+
+
+
+  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="main.js"></script>
+  
+
+  
+  
   </body>
+  
 </html>
