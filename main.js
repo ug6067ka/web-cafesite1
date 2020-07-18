@@ -58,15 +58,15 @@ function slideshow_timer() {
 }
 
 //
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper("#swiper01", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   centeredSlides: true,
-  slidesPerView: 3.5,
-  spaceBetween: 1,
+  slidesPerView: 4.5,
+  spaceBetween: 10,
   initialSlide: 0,
-  speed: 500,
+  speed: 800,
   loop: true,
 });
