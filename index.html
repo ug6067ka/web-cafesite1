@@ -17,9 +17,6 @@
     ></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-   
-    
-
   </head>
 
   <body>
@@ -36,11 +33,11 @@
   
           <nav>
             <ul>
-              <li><a href=".sec01">MESSAGE</a></li>
-              <li><a href=".sec02">MENU</a></li>
-              <li><a href=".sec03">PHOTO</a></li>
-              <li><a href=".sec04">ROCATION</a></li>
-              <li><a href=".sec04">CONTACT</a></li>
+              <li><a href=".message">MESSAGE</a></li>
+              <li><a href=".first_section">MENU</a></li>
+              <li><a href=".first_section">PHOTO</a></li>
+              <li><a href=".first_section">LOCATION</a></li>
+              <li><a href=".first_section">CONTACT</a></li>
             </ul>
           </nav>
         </div>
@@ -56,16 +53,15 @@
           onclick="slideshow()"
           src="./imagesbrooke-cagle-8jp-6SjVibM-unsplash.jpg
            "
-          width="100%"
-          height="0%"
+          
         />
   
         <div class="mouse">
           <span></span>
         </div>
       </div>
-      <div class="message">
-        <p>あなただけの<br>美味しいひとときを届けます。
+      <div class="message_section">
+        <p id="message">あなただけの<br>美味しいひとときを届けます。
         </p>
        
       </div>
@@ -77,7 +73,7 @@
         </div>
         <div class="first_section_right">
             <div class="first_left-inner">
-                <div class="sction-title">
+                <div class="sction-title" id="first_section">
                     MESSAGE</br>
                  </div>
                  <div class="sction-text">
@@ -97,14 +93,14 @@
       <div class="second_section">
         <div class="second_section_left">
           <div class="left-inner">
-            <div class="sction-title menupage_left-title-second">
+            <div class="sction-title menupage_left-title-second" id="secound_section">
                 MENU
                   
             </div>
         
             <div class="sction-text menupage_left-title-second">
               こだわりのエチオピア産コーヒー豆、　<br>
-              当店だけのオリジナルブランド、、<br>
+              当店だけのオリジナルブランドなど<br>
               3種類のコーヒー豆をご用意してます。<br>
               <br>
               コーヒー　¥480- <br>
@@ -126,7 +122,8 @@
       </div>
       <div class="swiper-container" id="swiper01">
         <div class="swiper-title">
-          PHOTO
+          <span>@caffepa_official</span>
+          <p>PHOTO</p>
         </div>
         <div class="swiper-wrapper">
           <div class="swiper-slide img1">
@@ -239,7 +236,7 @@
           <a href="#" class="cp_btn">080-1234-5678</a>
         </div>
       </div>
-      <div class="subsclibe">
+      <!-- <div class="subsclibe">
         <div class="subsclibe__sub-text">
           店舗からの最新情報をお届けします。
         </div>
@@ -252,21 +249,12 @@
           <input type="submit" value="登録する" class="form-submit" />
         </form>
       </div>  
-    
+     -->
     </main>
    
-                   
-
-
-
-  
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="main.js"></script>
-  
-
-  
-  
   </body>
   
 </html>

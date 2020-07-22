@@ -131,6 +131,10 @@ nav ul a {
   margin: 0 auto;
   position: relative;
   padding: 0 2%;
+
+  @media only screen and (max-width: 766px) {
+    width: 90%;
+  }
 }
 
 // * {
@@ -158,9 +162,11 @@ a {
   min-height: 500px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
+  height: 100%;
 
   img {
-    width: 100%;
+    width: 100vw;
+    height: 100%;
     object-fit: cover;
     opacity: 0.8;
   }
@@ -168,7 +174,7 @@ a {
 
 .main_img h1 {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   margin-left: -224px;
   z-index: 99;
@@ -259,7 +265,7 @@ a {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -339,7 +345,7 @@ a.cp_btn_right:before {
 
 .first_section_img {
   img {
-    width: 77%;
+    width: 70%;
   }
 }
 
@@ -402,26 +408,33 @@ a.cp_btn_right:before {
   // }
 }
 
-.swiper-title {
+.swiper-title p {
   font-size: 40px;
   font-weight: bold;
+  margin: 10px 0;
+}
+
+.swiper-title {
+  display: flex;
+  flex-direction: column;
   margin: 0 100px;
   position: relative;
   display: inline-block;
   margin-bottom: 1em;
 }
-.swiper-title:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -8px; /*線の上下位置*/
-  display: inline-block;
-  width: 60px; /*線の長さ*/
-  height: 5px; /*線の太さ*/
-  transform: translateX(-50%); /*位置調整*/
-  background-color: black; /*線の色*/
-  border-radius: 2px; /*線の丸み*/
-}
+
+// .swiper-title:before {
+//   content: "";
+//   position: absolute;
+//   left: 20%;
+//   bottom: 0px;
+//   display: inline-block;
+//   width: 60px; /*線の長さ*/
+//   height: 5px; /*線の太さ*/
+//   transform: translateX(-50%); /*位置調整*/
+//   background-color: black; /*線の色*/
+//   border-radius: 2px; /*線の丸み*/
+// }
 
 .swiper-wrapper {
   display: flex;
@@ -540,7 +553,7 @@ a.cp_btn_right:before {
 //maim
 
 //message
-.message {
+.message_section {
   display: flex;
   justify-content: center;
   align-items: center;
